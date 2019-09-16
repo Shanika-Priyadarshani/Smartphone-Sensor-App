@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Smartphone-Sensor-App</string>
+    <string name="app_name">Light Sensor Tracker</string>
     <string name="label_light">Illuminance: %1$.2f lx</string>
     <string name="no_data">No Sensor Data Updating</string>
     <string name="error_no_sensor">No sensor</string>

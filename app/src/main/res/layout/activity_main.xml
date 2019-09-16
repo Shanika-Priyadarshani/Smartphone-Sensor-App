@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fffafa"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -12,6 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
         android:text="Illuminance: %1$.2f lx"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/start_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +26,12 @@
         android:id="@+id/start_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/holo_blue_dark"
         android:layout_marginTop="188dp"
         android:onClick="onStartClicked"
         android:text="Start"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/stop_btn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,12 +41,14 @@
         android:id="@+id/stop_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/holo_red_dark"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
         android:onClick="onStopClicked"
-        android:text="End"
+        android:text="Stop"
+        android:textSize="12pt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/start_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/start_btn"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintStart_toEndOf="@+id/start_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
